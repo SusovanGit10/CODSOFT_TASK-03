@@ -1,0 +1,77 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px gray;
+    color: green;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px green;
+}
+.calculator {
+    background: silver;
+    padding: 20px;
+    border-radius: 10px;
+}
+.input-display {
+    background: #333;
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.result-display {
+    background: darkred;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+button {
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+button.large {
+    grid-column: span 2;
+}
+.history {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    color: skyblue;
+    text-shadow: 1px 1px 3px gray;
+}
